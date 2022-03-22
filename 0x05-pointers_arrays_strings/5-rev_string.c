@@ -23,4 +23,3 @@ temp = *(str + j);
 *(str + (j - 1)) = temp;
 }
 }
-}
