@@ -6,12 +6,14 @@
 */
 int main(void)
 {
-char text[9] = "_putchar";
-int i = 0;
-for (i = 0; i < 8; i++)
-{      
-_putchar(text[i]);
+char str[] = "_putchar";
+int i;
+i = 0;
+while (str[i])
+{
+_putchar(str[i]);
+++i;
 }
 _putchar('\n');
-return (0);  
+return (0);
 }
