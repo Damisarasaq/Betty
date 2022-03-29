@@ -7,7 +7,7 @@
  * Return: 0 if strings are the same
  * any other number if they are different.
  */
-int _strncmp(char *s1, char *s2, unsigned int b)  
+int _strncmp(char *s1, char *s2, unsigned int b)
 {
 unsigned int i;
 for (i = 0; i <= b && *s1 == *s2 && *s1 != '\0' && *s2 != '\0'; i++)
@@ -15,7 +15,7 @@ for (i = 0; i <= b && *s1 == *s2 && *s1 != '\0' && *s2 != '\0'; i++)
 s1++;
 s2++;
 }
-return (i - b);  
+return (i - b);
 }
 /**
  * _strstr - locates a substring
