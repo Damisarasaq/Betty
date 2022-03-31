@@ -4,35 +4,35 @@
  * @num: this is the multiplied number
  * Return: void just pring to console.
  */
-void print_nums(int num)  
+void print_nums(int num)
 {
 int x, y, z;
-if (num > 99) 
-{     
+if (num > 99)
+{
 x = num / 100 + '0';
-y = num / 10 % 10  + '0';  
+y = num / 10 % 10  + '0';
 z = num % 10 + '0';
 _putchar(' ');
 _putchar(x);
 _putchar(y);
-_putchar(z); 
+_putchar(z);
 }
-else if (num > 9)    
-{      
+else if (num > 9)
+{
 x = num / 10 + '0';
-y = num % 10 + '0';      
+y = num % 10 + '0';
 _putchar(' ');
-_putchar(' ');      
-_putchar(x);      
-_putchar(y);      
+_putchar(' ');
+_putchar(x);
+_putchar(y);
 }
 else
 {
 _putchar(' ');
 _putchar(' ');
 _putchar(' ');
-_putchar(num + '0'); 
-} 
+_putchar(num + '0');
+}
 }
 /**
  * print_times_table - print the times table depending on input
@@ -58,8 +58,8 @@ print_nums(num);
 if (j < n)
 _putchar(',');
 else
-_putchar('\n'); 
+_putchar('\n');
 }
 }
-} 
+}
 }
