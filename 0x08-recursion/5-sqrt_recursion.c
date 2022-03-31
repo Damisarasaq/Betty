@@ -6,7 +6,7 @@
  *
  * Return: -1 or sqrt of c
  */
-int sqrt_check(int g, int c) 
+int sqrt_check(int g, int c)
 {
 if (g * g == c)
 return (g);
@@ -20,7 +20,7 @@ return (sqrt_check(g + 1, c));
  *
  * Return: natural square root or -1
  */
-int _sqrt_recursion(int n) 
+int _sqrt_recursion(int n)
 {
 if (n == 0)
 return (0);
