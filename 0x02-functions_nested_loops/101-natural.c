@@ -4,7 +4,7 @@
  * main - print all multiples of 3 || 5 below 1024
  * Return: 0.
  */
-int main(void) 
+int main(void)
 {
 int i, num;
 num = 0;
