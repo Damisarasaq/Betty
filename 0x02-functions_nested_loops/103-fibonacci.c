@@ -4,7 +4,7 @@
  * main - print out sum of all even fibonacci num below 4 million
  * Return: 0.
  */
-int main(void) 
+int main(void)
 {
 unsigned long num1, num2, temp, sum;
 num1 = 0;
