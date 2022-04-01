@@ -18,7 +18,7 @@ printf("%lu, ", temp);
 else
 printf("%lu", temp);
 num1 = num2;
-num2 = temp; 
+num2 = temp;
 }
 printf("\n");
 return (0);
