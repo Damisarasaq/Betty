@@ -26,7 +26,7 @@ if (p[i] == NULL)
 for (j = 0; j < i; j++)
 free(p[j]);
 free(p);
-return (NULL); 
+return (NULL);
 }
 for (j = 0; j < width; j++)
 p[i][j] = 0;
