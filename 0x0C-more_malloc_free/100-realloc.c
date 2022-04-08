@@ -13,23 +13,23 @@ unsigned int i;
 if (ptr != NULL && new_size == 0)
 {
 free(ptr);
-return (NULL);      
+return (NULL);
 }
-if (new_size == old_size)   
+if (new_size == old_size)
 return (ptr);
 if (ptr == NULL)
 {
 p = malloc(new_size);
-return (p);     
+return (p);
 }
-if (new_size > old_size)    
+if (new_size > old_size)
 {
 p = malloc(new_size * sizeof(char));
 castptr = ptr;
 for (i = 0; i < old_size; i++)
 p[i] = castptr[i];
 free(ptr);
-return (p); 
+return (p);
 }
 return (ptr);
 }
