@@ -19,7 +19,7 @@ if (j || i == l - 1)
 _putchar(str[i]);
 i++;
 }
-_putchar('\n'); 
+_putchar('\n');
 free(str);
 }
 /**
@@ -37,7 +37,7 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 int j, k, mul, mulrem, add, addrem;
 mulrem = addrem = 0;
 for (j = num_index, k = dest_index; j >= 0; j--, k--)
-{ 
+{
 mul = (n - '0') * (num[j] - '0') + mulrem;
 mulrem = mul / 10;
 add = (dest[k] - '0') + (mul % 10) + addrem;
@@ -48,7 +48,7 @@ for (addrem += mulrem; k >= 0 && addrem; k--)
 {
 add = (dest[k] - '0') + addrem;
 addrem = add / 10;
-dest[k] = add % 10 + '0';      
+dest[k] = add % 10 + '0';
 }
 if (addrem)
 {
@@ -63,7 +63,6 @@ return (dest);
  * Return: 0 if digits, 1 if not
  */
 int check_for_digits(char **av)
-  
 {
 int i, j;
 for (i = 1; i < 3; i++)
@@ -108,7 +107,7 @@ if (argc != 3 || check_for_digits(argv))
 for (ti = 0; e[ti]; ti++)
 _putchar(e[ti]);
 exit(98);
-}  
+}
 for (l1 = 0; argv[1][l1]; l1++)
 ;
 for (l2 = 0; argv[2][l2]; l2++)
@@ -130,7 +129,7 @@ if (t == NULL)
 for (ti = 0; e[ti]; ti++)
 _putchar(e[ti]);
 free(a);
-exit(98);	  
+exit(98);
 }
 }
 _print(a, ln - 1);
